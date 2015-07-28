@@ -7,9 +7,9 @@ public class UnityRootCheck {
 	public static void isRooted(final String gameObjectName) {
 		try {
 			Runtime.getRuntime().exec("su");
-			UnityPlayer.UnitySendMessage(gameObjectName, "onCallBack", "Rooted");
+			UnityPlayer.UnitySendMessage(gameObjectName, "OnCallBack", "Rooted");
 		} catch (IOException e) {
-			UnityPlayer.UnitySendMessage(gameObjectName, "onCallBack", "Not Rooted");
+			UnityPlayer.UnitySendMessage(gameObjectName, "OnCallBack", "Not Rooted");
 		}
 	}
 }
